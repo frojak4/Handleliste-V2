@@ -29,9 +29,11 @@ function deleteItem(item) {
 }
 
 function changeItem(item) {
+    if (input.value != "") {
     handleListe[item] = input.value;
     showList();
     input.value = ""
+}
 }
 
 

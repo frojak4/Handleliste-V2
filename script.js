@@ -4,9 +4,11 @@ let handleListeDiv = document.getElementById("handlelisteDiv");
 let handleListe = [];
 
 function addToList() {
+    if (input.value != "") {
     handleListe.push(input.value);
     showList();
     input.value="";
+}
 }
 
 showList();
